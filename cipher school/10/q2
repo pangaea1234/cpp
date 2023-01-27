@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+    string toLowerCase(string s) {
+        string ans = "";
+        for (int i = 0;i<s.size();i++){
+            if(s[i] >= 'A' && s[i] <= 'Z'){
+                ans+=tolower(s[i]);
+            }else ans+=s[i];
+        }
+        return ans;
+    }
+
+
+
+int main(){
+
+    return 0;
+}
