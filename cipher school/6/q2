@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+bool checkPalindrome(string s){
+
+    string str = s;
+    reverse(str.begin(),str.end());
+
+    return (str == s);
+}
