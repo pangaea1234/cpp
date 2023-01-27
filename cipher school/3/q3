@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+// aproach 1 O(n^2)
+int findDegree(vector<int>nums) {
+    int deg = 0;
+    for(int i = 0;i<nums.size();i++){
+        int c = 0;
+        for(int j=0;j<nums.size();j++){
+            if(nums[j] == nums[i])c++;
+        }
+
+        if(c > deg)deg = c;
+    }
+
+    return deg;
+}
